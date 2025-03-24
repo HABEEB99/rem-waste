@@ -1,5 +1,7 @@
+import { OptionsList } from "@/components";
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return <OptionsList />;
 };
 
 export default HomePage;
