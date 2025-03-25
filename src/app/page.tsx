@@ -1,7 +1,12 @@
 import { OptionsList } from "@/components";
+import { Suspense } from "react";
 
 const HomePage = () => {
-  return <OptionsList />;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <OptionsList />
+    </Suspense>
+  );
 };
 
 export default HomePage;

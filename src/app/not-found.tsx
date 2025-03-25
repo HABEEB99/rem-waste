@@ -23,7 +23,7 @@ const NotFoundPage = () => {
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
         className="mt-4 text-xl text-gray-600"
       >
-        Oops! The page you're looking for doesn't exist.
+        Oops! The page you&apos;re looking for doesn&apos;t exist.
       </motion.p>
 
       {/* Go Back Home Button */}

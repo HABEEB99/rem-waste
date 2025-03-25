@@ -1,3 +1,4 @@
+/* eslint-disable-next-line @typescript-eslint/no-namespace */
 export namespace IOptionsList {
   export type IOptions = IOption[];
 
@@ -10,7 +11,7 @@ export namespace IOptionsList {
     price_before_vat: number;
     vat: number;
     postcode: string;
-    area: any;
+    area: unknown;
     forbidden: boolean;
     created_at: string;
     updated_at: string;
