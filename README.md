@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Next.js Project
 
-## Getting Started
+This is a **Next.js 15** Rem Waste web App with a, smooth animations, and a modern UI built with **React**, **Typescript**, **Tailwind CSS** and **Framer Motion**.
 
-First, run the development server:
+---
+
+## 🛠 Tech Stack
+
+This project leverages the following technologies:
+
+### ⚛️ React
+
+React is a declarative, component-based JavaScript library used for building fast and interactive UIs. It enables reusability, improves maintainability, and ensures an efficient rendering process via its Virtual DOM.
+
+### 🌍 Next.js
+
+Next.js is a powerful React framework that provides:
+
+- **Server-Side Rendering (SSR)** for better SEO and performance.
+- **Static Site Generation (SSG)** for fast page loads.
+- **API Routes** for backend logic without needing a separate server.
+- **Automatic Code Splitting** for optimized performance.
+
+### 🎨 Tailwind CSS
+
+Tailwind CSS is a utility-first CSS framework that helps build modern UIs quickly with:
+
+- **Highly customizable design tokens**
+- **Optimized styles for production**
+- **Responsive design utilities**
+- **No need to write custom CSS classes manually**
+
+### 🎭 Framer Motion
+
+Framer Motion is a powerful animation library for React that provides:
+
+- **Smooth animations and transitions**
+- **Gestures and interactions support**
+- **Highly optimized performance**
+- **Simple, declarative syntax for animations**
+
+### 🔥 TypeScript
+
+TypeScript enhances JavaScript by adding static typing, which:
+
+- **Prevents type-related bugs**
+- **Improves code maintainability**
+- **Enhances developer experience with better autocompletion**
+- **Supports object-oriented programming principles**
+
+### 🚀 Nuqs
+
+Nuqs is a lightweight state management solution for Next.js applications that offers:
+
+- **Efficient and minimal global state management**
+- **Seamless integration with React Server Components**
+- **Optimized performance with minimal re-renders**
+
+## 🎨 Features
+
+✅ **Modern UI** with Tailwind CSS  
+✅ **Animated 404 Page** with Framer Motion  
+✅ **Fast & Scalable** Next.js 15 structure  
+✅ **SEO-Friendly** with built-in optimizations
+
+---
+
+## 📂 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+src/
+│── app/
+│   ├── not-found.tsx              # Custom 404 page
+│   ├── layout.tsx                 # Root layout component
+│   ├── page.tsx                   # Homepage
+│── components/                    # Reusable components
+│── styles/                        # Tailwind & global styles
+│── public/                        # Static assets
+│── README.md                      # Documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 1️⃣ Clone the Repository
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+git clone https://github.com/HABEEB99/rem-waste
+cd your-project
+```
 
-## Learn More
+## 2️⃣ Install Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install  # or yarn install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3️⃣ Run the Development Server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run dev  # or yarn dev
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
