@@ -14,7 +14,7 @@ const OptionsPagination: React.FC<IOptionsPaginationProps> = ({
   options,
 }) => {
   return (
-    <div className="flex justify-center gap-4 mt-4">
+    <div className="flex items-center justify-center gap-4 mt-4">
       <button
         disabled={page === 1}
         onClick={() => setPage(page - 1)}
