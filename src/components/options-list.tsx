@@ -20,9 +20,9 @@ const OptionsList = () => {
   const [size, setSize] = useQueryState("size", parseAsInteger.withDefault(0));
   const [dateCreated, setDateCreated] = useQueryState(
     "dateCreated",
-    parseAsInteger.withDefault(2020)
+    parseAsInteger.withDefault(2021)
   );
-  const [view, setView] = useQueryState("view", parseAsInteger.withDefault(0));
+  const [view, setView] = useQueryState("view", parseAsInteger.withDefault(1));
 
   const [selectedItem, setSelectedItem] = useQueryState<number | null>(
     "selectedItem",
