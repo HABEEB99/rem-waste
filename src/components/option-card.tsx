@@ -1,7 +1,7 @@
 import { IOptionsList } from "@/interfaces/options-list-interface";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, TriangleAlert } from "lucide-react";
 import Image from "next/image";
 
 interface IOptionCardProps {
@@ -34,6 +34,29 @@ const OptionCard: React.FC<IOptionCardProps> = ({
       <span className="absolute top-6 right-8 bg-blue-700 w-fit p-2 text-center rounded-full">
         {option.size} Yards
       </span>
+
+      <div
+        className={cn(
+          "absolute  left-8 flex flex-col space-y-2",
+          option.allowed_on_road && option.allows_heavy_waste
+            ? "top-34"
+            : "top-44"
+        )}
+      >
+        {option.allowed_on_road && (
+          <div className="text-yellow-500 flex items-center space-x-3 bg-black w-60 h-8 text-sm p-2 rounded-md">
+            <TriangleAlert className="w-4 h-4" />
+            <span>Private Property Only</span>
+          </div>
+        )}
+
+        {option.allows_heavy_waste && (
+          <div className="text-red-500 flex items-center space-x-3 bg-black w-60 h-8 text-sm p-2 rounded-md">
+            <TriangleAlert className="w-4 h-4" />
+            <span>Not Suitable For Heavy Waste</span>
+          </div>
+        )}
+      </div>
 
       <div className="flex flex-col space-y-4">
         <div>

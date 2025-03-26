@@ -21,7 +21,7 @@ const SelectedOptionAlert: React.FC<ISelectedOptionAlertProps> = ({
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 50 }}
-          className="fixed bottom-0 inset-x-0 md:px-20 lg:px-40 left-0 w-full bg-gray-800 bg-opacity-50 h-auto py-4 flex justify-between items-center"
+          className="fixed bottom-0 inset-x-0 md:px-20 lg:px-40 left-0 w-full bg-gray-800 bg-opacity-50 h-auto py-6 flex justify-between items-center"
         >
           <div className="flex items-center justify-center space-x-5">
             <span>
